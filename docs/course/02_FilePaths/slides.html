@@ -2019,7 +2019,7 @@ David Rach
 <p><strong>.</strong></p>
 </div>
 <div class="callout-content">
-<p>You will notice, in the above example, we provided a character string (“ND050”) that was used to return files that contained the matching pattern. If we currently listed the files within data, we get a return that looks like this:</p>
+<p>If we currently listed the files within data, we get a return that looks like this:</p>
 </div>
 </div>
 </div>
@@ -2823,14 +2823,8 @@ David Rach
 <p><strong>Problem 2</strong></p>
 </div>
 <div class="callout-content">
-<p>In this session, we used list.files with the full.names argument, as well as the <code>basename()</code> function to identify specific files. But what if you wanted a particular directory. Run list.files with recursive set to TRUE, and then search online to find an R function that would retrieve the “” directory.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
+<p>In this session, we used <code>list.files()</code> with the “full.names argument” set to TRUE, as well as the <code>basename()</code> function to identify specific files. But what if you wanted a particular directory. Run <code>list.files()</code> with “full.names argument” and “recursive” argument set to TRUE, and then search online to find an R function that would retrieve the “” individual directory folders. :::</p>
+<hr>
 <div title="Problem 3">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -2842,19 +2836,24 @@ David Rach
 </div>
 <div class="callout-content">
 <p>R packages often come with internal datasets, that are typically used for use in the help documentation examples. These can be accessed through the use of the <code>system.file()</code> function. See an example below.</p>
-<p>Using what we have learned about file.path navigation, search your way down the file.directory of the <code>flowSOM</code> and <code>flowWorkspace</code> packages, and identify any .fcs files that are present for use in the documentation.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a></a><span class="fu">system.file</span>(<span class="st">"extdata"</span>, <span class="at">package =</span> <span class="st">"FlowSOM"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Using what we have learned about file.path navigation, search your way down the file.directory of the <code>FlowSOM</code> and <code>flowWorkspace</code> packages, and identify any .fcs files that are present for use in the documentation.</p>
 </div>
 </div>
 </div>
 </div>
-</section>
-<section class="slide level2">
-
+<hr>
 <div style="text-align: right;">
 <p><a href="https://www.gnu.org/licenses/agpl-3.0.en.html"><img data-src="https://www.gnu.org/graphics/agplv3-with-text-162x68.png" alt="AGPL-3.0"></a> <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img data-src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="CC BY-SA 4.0"></a></p>
 </div>
 
 
+</div>
+</div>
+</div>
+</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
